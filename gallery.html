@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet">
+<style>
+* 
+  .header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  }
+  .media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+	<div class="header">
+  <h1>Amelia Dobkin</h1>
+  <h3>Gallery</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div class="wrapper">
+<div class="media">
+      <div class="layer">
+  <a href="psai.html">Photoshop & Illustrator</a>
+</div>
+<img src="amelia_dobkin_photoshop1.jpg" alt="space cat" />
+</div>
+<div class="media">
+      <div class="layer">
+  <a href="traddraw.html">Traditional Drawing</a>
+</div>
+<img src="amelia_dobkin_draw1.jpg" alt="med draw" />
+</div>
+  <div class="media">
+      <div class="layer">
+  <a href="netae.html">Net Art & After Effects</a>
+</div>
+<img src="74lark.jpg" alt="Juna's lark" />
+</div>
+<div class="media">
+      <div class="layer">
+  <a href="sculpt3d.html">Sculpture & 3D Models</a>
+</div>
+<img src="amelia_dobkin_meshmixsketch.jpg" alt="boat ride" />
+</div>
+<div class="media">
+      <div class="layer">
+  <a href="codeart.html">Code Art</a>
+</div>
+<img src="amelia_dobkin_p5.jpg" alt="space Mae" />
+</div>
+</div>
+<br>
+<br>
+<a href="index.html">Back to Home</a>
+</body>
+</html>

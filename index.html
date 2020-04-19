@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Amelia Dobkin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Inria Sans', sans-serif;
+}
+ p {
+  font-size: 15px;
+  text-align: center;
+ }
+
+ #wrapper {
+
+  width: 90%; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  /*box-shadow: 3px 3px 3px 3px #808080;*/
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+.contact p{
+  text-align:center;
+}
+.media {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p{
+  text-align: left;
+ font-family: 'Inria Sans', sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="header">
+  <h1>Amelia Dobkin</h1>
+  <h3>Portfolio; Home</h3>
+</div>
+
+
+
+<div id="wrapper">
+
+<div class="row">
+
+  <div class="column">
+    <div class="media">
+    </div>
+    <div class="content">
+    <h2>Artist's Statement</h2>
+    <p>I work in several mediums, traditional and non-traditional.  I learned my art forms from a variety of sources, including classes, practice, and searching for tips online.  I have been working in digital and web art forms in earnest only since the start of this semester.  I have been doing traditional drawing and sculpture in some capacity for many years.  I am motivated to make art by my liking for doing so.  I also find it occasionally cathartic to make art. There is no common thread through my work, as much of it is made with the mentality that it will be a solo piece.  Art is important to me because it serves not only as entertainment, but a way to express things not easily expressed otherwise and a way to forge empathy in some cases.  
+</p>
+    </div>
+  </div>
+</div>
+  
+  <div class="column">
+    <div class="media">
+    </div>
+    <div class="contact">
+    <h2>Contact</h2>
+    <p>amelia.dobkin@sjsu.edu</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <a href = "gallery.html"><h2>Gallery</h2></a>
+    </div>
+  </div>
+
+  
+ 
+
+
+  </div>
+</body>
+</html>
