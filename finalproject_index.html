@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bylehpora Prison, Inmate 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body{
+		background: black;
+		color: white;
+		text-decoration: none;
+		font-family: Courier, monospace;
+		align-content: center;
+		text-align: center;
+	}
+	.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  /*next 4 lines centers image*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  
+  transform: rotateY(180deg);
+}
+	</style>
+</head>
+<body>
+	<h1>Bylehpora Prison</h1>
+	<h2>Security Office</h2>
+ <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="byplogo1.png" alt="eye1" style="width:400px;height:400px">
+    </div>
+    <div class="flip-box-back">
+    	<img src="byplogo2.png" alt="eye2" style="width:400px;height:400px" usemap="#workmap">
+    </div>
+    <map name="workmap">
+  <area shape="default" coords="34,44,270,350" alt="eye" href="suwa.html">
+</map>
+  </div>
+</div>
+	<h3>Scan badge to enter.</h3>
+	<h4>(Click the picture to start)</h4>
+
+	</body>
+	</html>
