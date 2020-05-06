@@ -508,7 +508,7 @@ const textNodes = [
     text: 'I see. What is their act like?',
     options: [
       {
-        text: 'Usually, two of the members stay on or near the ground making nost of the sonics while the other two do most of the flying and windsweeping ans stuff. They also have water in their routines...as the name would imply.',
+        text: 'Usually, two of the members stay on or near the ground making most of the sonics while the other two do most of the flying and windsweeping ans stuff. They also have water in their routines...as the name would imply.',
         nextText: 36
       }
     ]
