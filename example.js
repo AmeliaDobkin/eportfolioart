@@ -141,7 +141,7 @@ const textNodes = [
         nextText: 6
       },
       {
-        text: 'Uh huh [move on to other topics]',
+        text: 'Uh huh...[move on to other topics]',
         setState: { howYou: true, startCon: false  },
         nextText: 9
       }
@@ -149,7 +149,7 @@ const textNodes = [
   },
   {
     id: 8,
-    text: 'I see. ...Might sound weird, but I assumed you were bored...',
+    text: 'I see....Might sound weird, but I assumed you were bored...',
     options: [
       {
         text: 'Why?',
@@ -286,7 +286,7 @@ const textNodes = [
         nextText: 19
       },
       {
-        text: '*Sigh* At least it pays the bill...if only barely...',
+        text: '*Sigh* At least it pays the bills...if only barely...',
         nextText: 20
       }
     ]
@@ -429,7 +429,7 @@ const textNodes = [
   },
   {
     id: 29,
-    text: 'Ah yes. Theyre a solid act.',
+    text: 'Ah yes. They`re a solid act.',
     options: [
       {
         text: 'Literally, in a sense.',
@@ -508,7 +508,7 @@ const textNodes = [
     text: 'I see. What is their act like?',
     options: [
       {
-        text: 'Usually, two of the members stay on or near the ground making most of the sonics while the other two do most of the flying and windsweeping ans stuff. They also have water in their routines...as the name would imply.',
+        text: 'Usually, two of the members stay on or near the ground making most of the sonics while the other two do most of the flying and windsweeping and stuff. They also have water in their routines...as the name would imply.',
         nextText: 36
       }
     ]
@@ -561,7 +561,7 @@ const textNodes = [
   },
   {
     id: 40,
-    text: 'I see...Well, real quick, tell me what youre doing after work. If you dont mind, that is...',
+    text: 'I see...Well, real quick, tell me what you`re doing after work. If you don`t mind, that is...',
     options: [
       {
         text: 'I`d rather not...',
