@@ -10,7 +10,7 @@
 		text-align:center;
 		font-family: 'Inria Sans', sans-serif;
 	}
-	/*.footer {
+	.footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
@@ -21,14 +21,14 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container 
+/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-Next & previous buttons 
+/*Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -44,11 +44,11 @@ Next & previous buttons
   user-select: none;
 }
 
- Position the "next button" to the right 
+ /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}*/
+}
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
@@ -186,7 +186,7 @@ Next & previous buttons
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 
-<!---<script>
+<script>
 let slideIndex = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
@@ -206,7 +206,7 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
-</script>--->
+</script>
   
 	</body>
 
