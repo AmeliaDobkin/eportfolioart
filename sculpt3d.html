@@ -6,35 +6,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet">
 <style>
-	.carousel slide {
-		
-$carousel-control-color:             $white;
-$carousel-control-width:             15%;
-$carousel-control-opacity:           .5;
-$carousel-control-hover-opacity:     .9;
-$carousel-control-transition:        opacity .15s ease;
+	
+ .carousel-control-prev{	
+carousel-control-color:             white;
+carousel-control-width:             15%;
+carousel-control-opacity:           .5;
+carousel-control-hover-opacity:     .9;
+carousel-control-transition:        opacity .15s ease;
+	}
+	.carousel-inner{
+carousel-indicator-width:           30px;
+carousel-indicator-height:          3px;
+carousel-indicator-hit-area-height: 10px;
+carousel-indicator-spacer:          3px;
+carousel-indicator-opacity:         .5;
+carousel-indicator-active-bg:       $white;
+carousel-indicator-active-opacity:  1;
+carousel-indicator-transition:      opacity .6s ease;
+	
 
-$carousel-indicator-width:           30px;
-$carousel-indicator-height:          3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer:          3px;
-$carousel-indicator-opacity:         .5;
-$carousel-indicator-active-bg:       $white;
-$carousel-indicator-active-opacity:  1;
-$carousel-indicator-transition:      opacity .6s ease;
+carousel-control-icon-width:        2rem;
 
-$carousel-caption-width:             70%;
-$carousel-caption-color:             $white;
-$carousel-caption-padding-y:         1.25rem;
-$carousel-caption-spacer:            1.25rem;
+carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
 
-$carousel-control-icon-width:        2rem;
-
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
-
-$carousel-transition-duration:       .6s;
-$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+carousel-transition-duration:       .6s;
+carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 	}
 	body{
 		text-align:center;
@@ -95,7 +92,7 @@ $carousel-transition:                transform $carousel-transition-duration eas
 </div>
 	<h1>Sculpture</h1>
 	<p>"Asteroid Crossing"</p>
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleAutoplaying" class="carousel-slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="Bean_f.jpeg" class="d-block w-100" alt="...">
@@ -120,22 +117,7 @@ $carousel-transition:                transform $carousel-transition-duration eas
 
 
 <p>Slideshow 2:</p>
-<div class="slideshow-container">
-  <div class="mySlides2">
-    <img src="Bean_f.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides2">
-    <img src="scene_c2.jpeg" style="width:100%">
-  </div>
-
-  <div class="mySlides2">
-    <img src="Bean_s1L.jpeg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-</div>
 
 <script>
 	const myCarouselElement = document.querySelector('#myCarousel')
